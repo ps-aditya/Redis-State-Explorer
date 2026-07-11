@@ -6,7 +6,12 @@ Redis Live is a VS Code extension that connects directly to your Redis instance 
 
 Built in 2026. Actively maintained.
 
+<div align="center">
+
 ![Redis Live demo](./media/demo.gif)
+
+</div>
+
 
 ---
 
