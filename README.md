@@ -1,4 +1,4 @@
-# Redis Live
+# Redis State Explorer
 
 **See exactly what your code does to Redis, without leaving VS Code.**
 
