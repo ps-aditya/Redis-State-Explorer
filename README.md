@@ -16,7 +16,7 @@ Built in 2026. Actively maintained.
 
 Install Redis State Explorer from the banner above or search for it in the Extensions sidebar.
 
-If Redis is running locally, the extension connects automatically on startup — nothing to configure. For cloud instances (Upstash, Redis Cloud, Railway), press `Ctrl+Shift+P` → `Redis State Explorer: Add Connection` and paste your `rediss://` URL.
+If Redis is running locally, the extension connects automatically on startup - nothing to configure. For cloud instances (Upstash, Redis Cloud, Railway), press `Ctrl+Shift+P` → `Redis State Explorer: Add Connection` and paste your `rediss://` URL.
 
 **No local Redis?** Get a free instance at [Upstash](https://upstash.com) in under 2 minutes and paste the URL. Works immediately over TLS.
 
@@ -26,9 +26,9 @@ If Redis is running locally, the extension connects automatically on startup —
 
 ## The terminal
 
-Type any Redis command directly in the sidebar. All 200+ commands are supported — SET, GET, HSET, ZADD, XADD, SCAN, everything. Commands are syntax-highlighted as you type, with distinct colors for keywords, keys, values, numbers, and flags.
+Type any Redis command directly in the sidebar. All 200+ commands are supported - SET, GET, HSET, ZADD, XADD, SCAN, everything. Commands are syntax-highlighted as you type, with distinct colors for keywords, keys, values, numbers, and flags.
 
-Press `⌨` to open the command reference — a searchable list of every Redis command, organized by category. Click any command to insert it into the input with your cursor positioned at the first argument.
+Press `⌨` to open the command reference - a searchable list of every Redis command, organized by category. Click any command to insert it into the input with your cursor positioned at the first argument.
 
 Arrow keys navigate your command history. Tab fills the input from history without committing, so you can use previous commands as templates.
 
@@ -36,15 +36,15 @@ Arrow keys navigate your command history. Tab fills the input from history witho
 
 ## The state panel
 
-Below the terminal, a live view of every key in your Redis instance. Keys update automatically — no manual refresh, no polling indicator to dismiss. When a key is added it flashes green. When it's modified it flashes yellow.
+Below the terminal, a live view of every key in your Redis instance. Keys update automatically - no manual refresh, no polling indicator to dismiss. When a key is added it flashes green. When it's modified it flashes yellow.
 
-Click any key to expand it and see its full value inline — strings, lists, hashes, sets, sorted sets, and streams all rendered natively in their own format. Type a glob pattern to filter the list instantly (`user:*`, `session:*`, `cache:*`).
+Click any key to expand it and see its full value inline - strings, lists, hashes, sets, sorted sets, and streams all rendered natively in their own format. Type a glob pattern to filter the list instantly (`user:*`, `session:*`, `cache:*`).
 
 ---
 
 ## The diff timeline
 
-Every change to your Redis state is recorded in a timeline. Commands you ran yourself are labeled with the command text. Changes made by other processes — your application running in another terminal, a background job, a colleague on the same instance — show up as external changes. You always know what changed, when, and what caused it.
+Every change to your Redis state is recorded in a timeline. Commands you ran yourself are labeled with the command text. Changes made by other processes - your application running in another terminal, a background job, a colleague on the same instance - show up as external changes. You always know what changed, when, and what caused it.
 
 ---
 
@@ -60,7 +60,7 @@ No other Redis extension connects your code saves to your Redis state changes.
 
 ## Code detective
 
-Open any source file that uses a Redis client — Node.js (`client.get()`, `redis.set()`), Python (`r.get()`, `redis.set()`) — and Redis State Explorer scans it for key references. Matching keys in your state panel are highlighted with a blue indicator. Click `⟨/⟩` on any highlighted key to jump directly to the line in your code that references it.
+Open any source file that uses a Redis client - Node.js (`client.get()`, `redis.set()`), Python (`r.get()`, `redis.set()`) - and Redis State Explorer scans it for key references. Matching keys in your state panel are highlighted with a blue indicator. Click `⟨/⟩` on any highlighted key to jump directly to the line in your code that references it.
 
 ---
 
@@ -73,7 +73,7 @@ Save named connection profiles (local, staging, prod) and switch between them fr
 ## Requirements
 
 - VS Code 1.85.0 or later
-- A Redis instance — local, Docker, or cloud
+- A Redis instance - local, Docker, or cloud
 
 ---
 
