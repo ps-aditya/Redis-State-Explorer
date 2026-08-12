@@ -2,25 +2,25 @@
 
 **See exactly what your code does to Redis, without leaving VS Code.**
 
-Redis Live is a VS Code extension that connects directly to your Redis instance and shows you what's happening inside it in real time. Run a command, watch the key appear. Save a file, see which keys changed as a result. Every mutation tracked, every change visible, all inside the sidebar.
+Redis State Explorer is a VS Code extension that connects directly to your Redis instance and shows you what's happening inside it in real time. Run a command, watch the key appear. Save a file, see which keys changed as a result. Every mutation tracked, every change visible, all inside the sidebar.
 
 Built in 2026. Actively maintained.
 
 <div align="center">
-  <img src="./extension/media/demo.gif" alt="Redis Live demo" />
+  <img src="./extension/media/demo.gif" alt="Redis State Explorer demo" />
 </div>
 
 ---
 
 ## Getting Started
 
-Install Redis Live from the banner above or search for it in the Extensions sidebar.
+Install Redis State Explorer from the banner above or search for it in the Extensions sidebar.
 
-If Redis is running locally, the extension connects automatically on startup — nothing to configure. For cloud instances (Upstash, Redis Cloud, Railway), press `Ctrl+Shift+P` → `Redis Live: Add Connection` and paste your `rediss://` URL.
+If Redis is running locally, the extension connects automatically on startup — nothing to configure. For cloud instances (Upstash, Redis Cloud, Railway), press `Ctrl+Shift+P` → `Redis State Explorer: Add Connection` and paste your `rediss://` URL.
 
 **No local Redis?** Get a free instance at [Upstash](https://upstash.com) in under 2 minutes and paste the URL. Works immediately over TLS.
 
-**No backend server required.** Redis Live connects directly to Redis using `ioredis`, built into the extension.
+**No backend server required.** Redis State Explorer connects directly to Redis using `ioredis`, built into the extension.
 
 ---
 
@@ -50,9 +50,9 @@ Every change to your Redis state is recorded in a timeline. Commands you ran you
 
 ## Save-diff
 
-This is the feature that makes Redis Live different from every other Redis tool.
+This is the feature that makes Redis State Explorer different from every other Redis tool.
 
-When you save a file, Redis Live captures a snapshot of your Redis state before and after. The diff timeline shows exactly which keys changed as a result of that save. If your code sets three keys and updates two others, you'll see all five appear in the timeline the moment you hit save.
+When you save a file, Redis State Explorer captures a snapshot of your Redis state before and after. The diff timeline shows exactly which keys changed as a result of that save. If your code sets three keys and updates two others, you'll see all five appear in the timeline the moment you hit save.
 
 No other Redis extension connects your code saves to your Redis state changes.
 
@@ -60,7 +60,7 @@ No other Redis extension connects your code saves to your Redis state changes.
 
 ## Code detective
 
-Open any source file that uses a Redis client — Node.js (`client.get()`, `redis.set()`), Python (`r.get()`, `redis.set()`) — and Redis Live scans it for key references. Matching keys in your state panel are highlighted with a blue indicator. Click `⟨/⟩` on any highlighted key to jump directly to the line in your code that references it.
+Open any source file that uses a Redis client — Node.js (`client.get()`, `redis.set()`), Python (`r.get()`, `redis.set()`) — and Redis State Explorer scans it for key references. Matching keys in your state panel are highlighted with a blue indicator. Click `⟨/⟩` on any highlighted key to jump directly to the line in your code that references it.
 
 ---
 
@@ -79,7 +79,7 @@ Save named connection profiles (local, staging, prod) and switch between them fr
 
 ## License
 
-MIT# Redis Live
+MIT# Redis State Explorer
 
 **Live Redis state updates in under 1 second. See exactly what your code changed, in real time.**
 
@@ -89,11 +89,11 @@ Terminal, key explorer, diff timeline, and code detective in one sidebar panel. 
 
 ---
 
-## Why Redis Live?
+## Why Redis State Explorer?
 
 Every other Redis extension for VS Code was built between 2018 and 2021 and has been abandoned since. They show you keys. They don't show you *what changed*.
 
-Redis Live is built for the workflow that actually matters: **you write code, you run it, and you need to see what it did to Redis, without leaving VS Code.**
+Redis State Explorer is built for the workflow that actually matters: **you write code, you run it, and you need to see what it did to Redis, without leaving VS Code.**
 
 ---
 
@@ -119,10 +119,10 @@ Type any Redis command directly in the sidebar. All 200+ commands supported. Com
 Every Redis state change is recorded. Commands you ran are labeled by name. Changes from other processes show as "external change." See exactly what changed, when, and how many keys were affected.
 
 ### 💾 Save-diff - the feature nobody else has
-Save a file → Redis Live captures your Redis state before and after → shows exactly which keys your code changed as a result. No other tool on earth connects your code saves to your Redis state changes. This is the feature that makes Redis Live irreplaceable once you've used it.
+Save a file → Redis State Explorer captures your Redis state before and after → shows exactly which keys your code changed as a result. No other tool on earth connects your code saves to your Redis state changes. This is the feature that makes Redis State Explorer irreplaceable once you've used it.
 
 ### 🔍 Code detective
-Open any file using a Redis client and Redis Live highlights the matching keys in your state panel. Click `⟨/⟩` to jump to the exact line in your code that references that key.
+Open any file using a Redis client and Redis State Explorer highlights the matching keys in your state panel. Click `⟨/⟩` to jump to the exact line in your code that references that key.
 
 Supports:
 - Node.js - `client.get()`, `redis.set()`, `ioredis`
@@ -143,7 +143,7 @@ Type any pattern in the state panel to filter your keys instantly - `user:*`, `s
 
 ### Zero-config local setup
 
-If Redis is running locally, Redis Live connects automatically on startup. Nothing to configure.
+If Redis is running locally, Redis State Explorer connects automatically on startup. Nothing to configure.
 
 ```
 redis://localhost:6379
@@ -155,13 +155,13 @@ redis://localhost:6379
 docker run -d -p 6379:6379 redis
 ```
 
-Open VS Code - Redis Live connects immediately.
+Open VS Code - Redis State Explorer connects immediately.
 
 ### With a cloud instance (no local install needed)
 
 1. Sign up free at [Upstash](https://upstash.com) or [Redis Cloud](https://redis.io/try-free)
 2. Copy your connection URL
-3. Press `Ctrl+Shift+P` → `Redis Live: Add Connection`
+3. Press `Ctrl+Shift+P` → `Redis State Explorer: Add Connection`
 4. Paste your `rediss://` URL
 
 Done. Takes under 2 minutes.
@@ -188,10 +188,10 @@ rediss://default:token@my-instance.upstash.io:6380
 
 | Command | What it does |
 |---|---|
-| `Redis Live: Connect…` | Connect to Redis or switch between saved profiles |
-| `Redis Live: Add Connection…` | Save a new named connection profile |
-| `Redis Live: Open Panel` | Open the Redis Live sidebar |
-| `Redis Live: Configure` | Open extension settings |
+| `Redis State Explorer: Connect…` | Connect to Redis or switch between saved profiles |
+| `Redis State Explorer: Add Connection…` | Save a new named connection profile |
+| `Redis State Explorer: Open Panel` | Open the Redis State Explorer sidebar |
+| `Redis State Explorer: Configure` | Open extension settings |
 
 ---
 
@@ -233,13 +233,13 @@ rediss://default:token@my-instance.upstash.io:6380
 - VS Code 1.85.0 or later
 - A running Redis instance - local, Docker, or cloud
 
-**No backend server required.** Redis Live connects directly to Redis using the battle-tested `ioredis` client, built into the extension. Nothing to install, nothing to run.
+**No backend server required.** Redis State Explorer connects directly to Redis using the battle-tested `ioredis` client, built into the extension. Nothing to install, nothing to run.
 
 ---
 
 ## Why not the others?
 
-| | Redis Live | Competitors |
+| | Redis State Explorer | Competitors |
 |---|---|---|
 | Live state updates | ✅ Under 1 second | ❌ Manual refresh only |
 | Diff timeline | ✅ Every change recorded | ❌ Not available |
